@@ -151,6 +151,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
+TARGET_GCC_VERSION_EXP := 4.8
+TARGET_EXTERNAL_APPS = sdcard1
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/ancora/sepolicy
