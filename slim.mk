@@ -1,13 +1,17 @@
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/full_ancora.mk)
+$(call inherit-product, device/samsung/ancora/full_ancora.mk)
 
 PRODUCT_RELEASE_NAME := ancora
 
 # Setup device configuration
-PRODUCT_NAME := cm_ancora
+PRODUCT_NAME := slim_ancora
 PRODUCT_DEVICE := ancora
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
